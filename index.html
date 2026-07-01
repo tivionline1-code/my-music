@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Suno Music</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="lock" class="lock">
+    <div class="lock-card">
+      <h1>🎧 My Music</h1>
+      <p>Nhập mật khẩu để nghe nhạc.</p>
+      <input id="pass" type="password" placeholder="Mật khẩu" autocomplete="current-password" />
+      <button id="unlock">Mở nhạc</button>
+      <small id="wrong"></small>
+    </div>
+  </div>
+
+  <main id="app" class="app hidden">
+    <aside class="side">
+      <h2>🎵 My Music</h2>
+      <button class="nav active" data-filter="all">Tất cả</button>
+      <button class="nav" data-filter="fav">Yêu thích</button>
+      <div class="albums"><h3>Album / Thư mục</h3><div id="albums"></div></div>
+    </aside>
+
+    <section class="main">
+      <header class="top">
+        <input id="search" placeholder="Tìm bài hát..." />
+        <span id="count"></span>
+      </header>
+      <div id="tracks" class="tracks"></div>
+    </section>
+
+    <footer class="player">
+      <div class="now"><img id="cover" alt="cover"><div><b id="title">Chưa chọn bài</b><span id="album"></span></div></div>
+      <audio id="audio" controls></audio>
+      <div class="buttons"><button id="prev">⏮</button><button id="shuffle">🔀</button><button id="repeat">🔁</button><button id="next">⏭</button></div>
+    </footer>
+  </main>
+  <script src="library.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

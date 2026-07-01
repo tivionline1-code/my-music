@@ -1,0 +1,1 @@
+window.MUSIC_LIBRARY = [];
