@@ -64,6 +64,14 @@ window.MUSIC_LIBRARY = [
     "cover": ""
   },
   {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 147 - 864a29fd - MP3.mp3",
+    "title": "Fantasy Waltz 147   864a29fd   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 147 - 864a29fd - MP3.mp3",
+    "cover": ""
+  },
+  {
     "id": "music/Nhạc Không Lời/Fantasy Waltz 157 - 6153a00d - MP3.mp3",
     "title": "Fantasy Waltz 157   6153a00d   MP3",
     "artist": "Suno",
