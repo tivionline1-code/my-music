@@ -9,36 +9,76 @@
 <body>
   <div id="lock" class="lock">
     <div class="lock-card">
-      <h1>🎧 My Music</h1>
-      <p>Nhập mật khẩu để nghe nhạc.</p>
-      <input id="pass" type="password" placeholder="Mật khẩu" autocomplete="current-password" />
-      <button id="unlock">Mở nhạc</button>
-      <small id="wrong"></small>
+      <div class="brand">🎧</div>
+      <h1>My Suno Music</h1>
+      <p>Nhập mật khẩu để nghe nhạc</p>
+      <input id="password" type="password" placeholder="Mật khẩu" autocomplete="current-password" />
+      <button id="unlockBtn">Mở nhạc</button>
+      <small id="lockMsg"></small>
     </div>
   </div>
 
   <main id="app" class="app hidden">
-    <aside class="side">
-      <h2>🎵 My Music</h2>
-      <button class="nav active" data-filter="all">Tất cả</button>
-      <button class="nav" data-filter="fav">Yêu thích</button>
-      <div class="albums"><h3>Album / Thư mục</h3><div id="albums"></div></div>
+    <aside class="sidebar">
+      <h2>🎧 My Music</h2>
+      <button class="nav active" data-view="all">Tất cả bài hát</button>
+      <button class="nav" data-view="favorites">Yêu thích</button>
+      <button class="nav" data-view="recent">Nghe gần đây</button>
+      <div class="side-title">Album</div>
+      <div id="albumList" class="albums"></div>
     </aside>
 
-    <section class="main">
-      <header class="top">
-        <input id="search" placeholder="Tìm bài hát..." />
-        <span id="count"></span>
+    <section class="content">
+      <header class="topbar">
+        <div>
+          <h1 id="pageTitle">Tất cả bài hát</h1>
+          <p id="stats">Đang tải thư viện...</p>
+        </div>
+        <input id="search" class="search" placeholder="Tìm bài hát, album..." />
       </header>
-      <div id="tracks" class="tracks"></div>
+
+      <section id="hero" class="hero">
+        <div id="heroCover" class="hero-cover">♪</div>
+        <div>
+          <div class="eyebrow">Private Suno Library</div>
+          <h2>Thư viện nhạc riêng của bạn</h2>
+          <p>Upload nhạc vào thư mục <b>music</b>, GitHub Actions sẽ tự cập nhật danh sách.</p>
+        </div>
+      </section>
+
+      <div id="trackList" class="track-list"></div>
     </section>
 
     <footer class="player">
-      <div class="now"><img id="cover" alt="cover"><div><b id="title">Chưa chọn bài</b><span id="album"></span></div></div>
-      <audio id="audio" controls></audio>
-      <div class="buttons"><button id="prev">⏮</button><button id="shuffle">🔀</button><button id="repeat">🔁</button><button id="next">⏭</button></div>
+      <div class="now">
+        <div id="nowCover" class="now-cover">♪</div>
+        <div>
+          <div id="nowTitle" class="now-title">Chưa chọn bài</div>
+          <div id="nowMeta" class="now-meta">—</div>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="buttons">
+          <button id="shuffleBtn" title="Shuffle">🔀</button>
+          <button id="prevBtn" title="Trước">⏮</button>
+          <button id="playBtn" class="play" title="Phát/Tạm dừng">▶</button>
+          <button id="nextBtn" title="Tiếp">⏭</button>
+          <button id="repeatBtn" title="Repeat">🔁</button>
+        </div>
+        <div class="bar-row">
+          <span id="curTime">0:00</span>
+          <input id="seek" type="range" min="0" max="100" value="0" />
+          <span id="durTime">0:00</span>
+        </div>
+      </div>
+      <div class="volume">
+        <canvas id="viz" width="120" height="40"></canvas>
+        <span>🔊</span><input id="volume" type="range" min="0" max="1" step="0.01" value="0.85" />
+      </div>
+      <audio id="audio" preload="metadata"></audio>
     </footer>
   </main>
+
   <script src="library.js"></script>
   <script src="app.js"></script>
 </body>

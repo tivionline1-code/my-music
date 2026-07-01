@@ -1,18 +1,33 @@
-# My Suno Music - GitHub Auto
+# My Suno Music - Spotify Style
 
-## Cach dung
-1. Upload toan bo thu muc nay len GitHub.
-2. Bat GitHub Pages: Settings > Pages > Deploy from a branch > main > /root.
-3. Muon them nhac: upload file vao thu muc `music`.
-4. GitHub Actions se tu chay `generate-library.js` va cap nhat `library.js`.
+## Cách dùng
+1. Upload toàn bộ file/thư mục trong gói này lên GitHub repo.
+2. Bật GitHub Pages: Settings > Pages > Deploy from a branch > main > /(root).
+3. Thêm nhạc vào thư mục `music`.
+4. GitHub Actions tự cập nhật `library.js`.
+5. Mở link GitHub Pages để nghe.
 
-## Cau truc nen dung
-music/Nhac buon/Bai 01.mp3
-music/Nhac buon/cover.jpg
-music/Remix/Bai remix.wav
+## Mật khẩu
+Mật khẩu mặc định: `123456`
 
-## Doi mat khau
-Mo file `app.js`, sua dong:
-const PASSWORD = "123456";
+Đổi trong file `app.js`:
+```js
+const PASSWORD = '123456';
+```
 
-Luu y: mat khau nay chi la khoa nhe cho web tinh. Neu repository public, nguoi biet ky thuat van co the xem file nhac.
+## Cấu trúc album
+```text
+music/
+  Nhac Hoa/
+    album.jpg
+    Bai 01.mp3
+    Bai 02.wav
+  Piano/
+    cover.png
+    Piano 01.flac
+```
+
+Tên thư mục con trong `music` sẽ là tên album. Ảnh bìa ưu tiên: `cover.jpg`, `folder.jpg`, `album.jpg`, `artwork.jpg`, hoặc PNG/WEBP tương ứng.
+
+## Định dạng hỗ trợ
+MP3, WAV, FLAC, M4A, AAC, OGG, OPUS, WEBM. Trình duyệt có thể không phát một số codec hiếm.

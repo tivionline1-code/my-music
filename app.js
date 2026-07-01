@@ -1,25 +1,82 @@
-const PASSWORD = "123456"; // Doi mat khau tai day
-const audio = document.getElementById('audio');
-const tracksEl = document.getElementById('tracks');
-const albumsEl = document.getElementById('albums');
-const searchEl = document.getElementById('search');
-const countEl = document.getElementById('count');
-const favKey = 'suno-favorites-v2';
-let all = Array.isArray(window.MUSIC_LIBRARY) ? window.MUSIC_LIBRARY : [];
-let current = 0, filter = 'all', album = '', shuffle = false, repeat = false;
-let favs = new Set(JSON.parse(localStorage.getItem(favKey) || '[]'));
-function saveFav(){ localStorage.setItem(favKey, JSON.stringify([...favs])); }
-function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
-function coverOf(t){ return t.cover || 'data:image/svg+xml;utf8,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="100%" height="100%" fill="#142232"/><text x="50%" y="52%" font-size="64" text-anchor="middle" fill="#22c55e">♫</text></svg>`); }
-function visible(){ const q=norm(searchEl.value); return all.filter(t=>{ if(filter==='fav'&&!favs.has(t.path)) return false; if(album&&t.album!==album) return false; return !q || norm(t.title+' '+t.album+' '+t.path).includes(q); }); }
-function renderAlbums(){ const albums=[...new Set(all.map(t=>t.album||'Khac'))].sort(); albumsEl.innerHTML=''; albums.forEach(a=>{ const b=document.createElement('button'); b.className='album-btn'; b.textContent=a; b.onclick=()=>{album=album===a?'':a; filter='all'; document.querySelectorAll('.nav').forEach(x=>x.classList.remove('active')); render();}; albumsEl.appendChild(b); }); }
-function render(){ const list=visible(); countEl.textContent=list.length+' bài'; tracksEl.innerHTML=''; list.forEach((t,i)=>{ const row=document.createElement('div'); row.className='track '+(all[current]?.path===t.path?'playing':''); row.innerHTML=`<img src="${coverOf(t)}"><div><b>${t.title}</b><span>${t.album||''}</span></div><button class="fav">${favs.has(t.path)?'★':'☆'}</button><div class="fmt">${(t.ext||'').toUpperCase()}</div>`; row.onclick=(e)=>{ if(e.target.className==='fav'){ favs.has(t.path)?favs.delete(t.path):favs.add(t.path); saveFav(); render(); return;} play(all.indexOf(t)); }; tracksEl.appendChild(row); }); }
-function play(i){ if(!all.length) return; current=(i+all.length)%all.length; const t=all[current]; audio.src=encodeURI(t.path); audio.play().catch(()=>{}); document.getElementById('title').textContent=t.title; document.getElementById('album').textContent=t.album||''; document.getElementById('cover').src=coverOf(t); localStorage.setItem('suno-last', String(current)); render(); }
-function next(){ if(shuffle) play(Math.floor(Math.random()*all.length)); else play(current+1); }
-document.getElementById('unlock').onclick=()=>{ if(document.getElementById('pass').value===PASSWORD){ document.getElementById('lock').classList.add('hidden'); document.getElementById('app').classList.remove('hidden'); } else document.getElementById('wrong').textContent='Sai mật khẩu'; };
-document.getElementById('pass').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('unlock').click()});
-document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;album='';render();});
-searchEl.oninput=render; document.getElementById('next').onclick=next; document.getElementById('prev').onclick=()=>play(current-1);
-document.getElementById('shuffle').onclick=e=>{shuffle=!shuffle;e.currentTarget.classList.toggle('on',shuffle)}; document.getElementById('repeat').onclick=e=>{repeat=!repeat;e.currentTarget.classList.toggle('on',repeat)};
-audio.onended=()=> repeat ? play(current) : next();
-renderAlbums(); current=Number(localStorage.getItem('suno-last')||0); render();
+const PASSWORD = '123456';
+const $ = (id) => document.getElementById(id);
+const audio = $('audio');
+const state = { tracks: [], filtered: [], index: -1, view: 'all', album: null, shuffle: false, repeat: false, favs: new Set(JSON.parse(localStorage.getItem('favs')||'[]')), recent: JSON.parse(localStorage.getItem('recent')||'[]') };
+
+function saveFavs(){ localStorage.setItem('favs', JSON.stringify([...state.favs])); }
+function saveRecent(){ localStorage.setItem('recent', JSON.stringify(state.recent.slice(0,50))); }
+function fmt(s){ if(!isFinite(s)) return '0:00'; const m=Math.floor(s/60); const r=Math.floor(s%60).toString().padStart(2,'0'); return `${m}:${r}`; }
+function esc(s=''){ return String(s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+function pathName(p){ return decodeURIComponent((p||'').split('/').pop()||''); }
+function titleFromFile(p){ return pathName(p).replace(/\.[^.]+$/,'').replace(/[_-]+/g,' ').trim(); }
+function albumFromPath(p){ const parts=(p||'').split('/'); return parts.length>2 ? parts[1] : 'Music'; }
+function coverFor(t){ return t.cover || ''; }
+function coverHtml(t, cls='cover'){ const c=coverFor(t); return `<div class="${cls}">${c?`<img src="${esc(c)}" alt="">`:'♪'}</div>`; }
+
+function normalizeLibrary(){
+  const lib = Array.isArray(window.MUSIC_LIBRARY) ? window.MUSIC_LIBRARY : [];
+  state.tracks = lib.map((t,i)=>({
+    id: t.id || t.path || `track-${i}`,
+    title: t.title || titleFromFile(t.path),
+    album: t.album || albumFromPath(t.path),
+    artist: t.artist || 'Suno',
+    path: t.path,
+    cover: t.cover || '',
+    duration: t.duration || ''
+  })).filter(t=>t.path);
+}
+
+function unlock(){
+  if($('password').value === PASSWORD){
+    localStorage.setItem('unlocked','1'); $('lock').classList.add('hidden'); $('app').classList.remove('hidden'); init();
+  } else $('lockMsg').textContent='Sai mật khẩu';
+}
+$('unlockBtn').onclick = unlock; $('password').addEventListener('keydown', e=>{ if(e.key==='Enter') unlock(); });
+if(localStorage.getItem('unlocked')==='1'){ $('lock').classList.add('hidden'); $('app').classList.remove('hidden'); setTimeout(init); }
+
+function init(){ normalizeLibrary(); renderAlbums(); render(); restoreLast(); setupViz(); }
+function albums(){ return [...new Set(state.tracks.map(t=>t.album))].sort((a,b)=>a.localeCompare(b,'vi')); }
+function renderAlbums(){
+  $('albumList').innerHTML = albums().map(a=>`<button class="album-btn" data-album="${esc(a)}"><span>${esc(a)}</span><span>${state.tracks.filter(t=>t.album===a).length}</span></button>`).join('') || '<div class="meta">Chưa có album</div>';
+  document.querySelectorAll('.album-btn').forEach(b=>b.onclick=()=>{state.view='album'; state.album=b.dataset.album; setActiveNav(); render();});
+}
+function setActiveNav(){ document.querySelectorAll('.nav').forEach(b=>b.classList.toggle('active', b.dataset.view===state.view)); document.querySelectorAll('.album-btn').forEach(b=>b.classList.toggle('active', state.view==='album' && b.dataset.album===state.album)); }
+document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>{ state.view=b.dataset.view; state.album=null; setActiveNav(); render(); });
+$('search').oninput = render;
+
+function currentBase(){
+  if(state.view==='favorites') return state.tracks.filter(t=>state.favs.has(t.id));
+  if(state.view==='recent') return state.recent.map(id=>state.tracks.find(t=>t.id===id)).filter(Boolean);
+  if(state.view==='album') return state.tracks.filter(t=>t.album===state.album);
+  return state.tracks;
+}
+function render(){
+  setActiveNav();
+  const q=$('search').value.toLowerCase().trim();
+  state.filtered = currentBase().filter(t=>!q || `${t.title} ${t.album} ${t.artist}`.toLowerCase().includes(q));
+  const titles={all:'Tất cả bài hát',favorites:'Yêu thích',recent:'Nghe gần đây',album:state.album||'Album'};
+  $('pageTitle').textContent=titles[state.view]; $('stats').textContent=`${state.filtered.length} bài hát • ${albums().length} album`;
+  $('trackList').innerHTML = state.filtered.length ? state.filtered.map((t,i)=>`<div class="track ${state.tracks[state.index]?.id===t.id?'playing':''}" data-i="${i}">${coverHtml(t)}<div><div class="title">${esc(t.title)}</div><div class="meta">${esc(t.artist)}</div></div><div class="album-col">${esc(t.album)}</div><div class="duration">${esc(t.duration||'')}</div><button class="fav ${state.favs.has(t.id)?'on':''}" data-fav="${esc(t.id)}">★</button></div>`).join('') : '<div class="empty">Chưa có bài hát. Hãy upload nhạc vào thư mục music rồi chờ GitHub Actions cập nhật.</div>';
+  document.querySelectorAll('.track').forEach(el=>el.onclick=(e)=>{ if(e.target.classList.contains('fav')) return; playFiltered(+el.dataset.i); });
+  document.querySelectorAll('.fav').forEach(b=>b.onclick=()=>{ const id=b.dataset.fav; state.favs.has(id)?state.favs.delete(id):state.favs.add(id); saveFavs(); render(); });
+}
+function playFiltered(i){ const t=state.filtered[i]; const real=state.tracks.findIndex(x=>x.id===t.id); playIndex(real); }
+function playIndex(i){ if(i<0||i>=state.tracks.length) return; state.index=i; const t=state.tracks[i]; audio.src=t.path; audio.play().catch(()=>{}); updateNow(); state.recent=[t.id,...state.recent.filter(x=>x!==t.id)]; saveRecent(); localStorage.setItem('lastTrack',t.id); render(); }
+function updateNow(){ const t=state.tracks[state.index]; $('nowTitle').textContent=t?t.title:'Chưa chọn bài'; $('nowMeta').textContent=t?`${t.artist} • ${t.album}`:'—'; $('nowCover').innerHTML=t&&coverFor(t)?`<img src="${esc(coverFor(t))}">`:'♪'; $('playBtn').textContent=audio.paused?'▶':'⏸'; }
+function next(){ if(!state.tracks.length)return; if(state.shuffle) return playIndex(Math.floor(Math.random()*state.tracks.length)); playIndex((state.index+1)%state.tracks.length); }
+function prev(){ if(!state.tracks.length)return; playIndex((state.index-1+state.tracks.length)%state.tracks.length); }
+$('playBtn').onclick=()=>{ if(state.index<0 && state.tracks.length) playIndex(0); else audio.paused?audio.play():audio.pause(); };
+$('nextBtn').onclick=next; $('prevBtn').onclick=prev;
+$('shuffleBtn').onclick=()=>{state.shuffle=!state.shuffle; $('shuffleBtn').classList.toggle('active',state.shuffle)};
+$('repeatBtn').onclick=()=>{state.repeat=!state.repeat; $('repeatBtn').classList.toggle('active',state.repeat)};
+audio.onplay=updateNow; audio.onpause=updateNow; audio.onended=()=> state.repeat ? playIndex(state.index) : next();
+audio.ontimeupdate=()=>{ $('curTime').textContent=fmt(audio.currentTime); $('durTime').textContent=fmt(audio.duration); $('seek').value= audio.duration ? (audio.currentTime/audio.duration*100) : 0; localStorage.setItem('lastTime',String(audio.currentTime||0)); };
+$('seek').oninput=()=>{ if(audio.duration) audio.currentTime= audio.duration * $('seek').value/100; };
+$('volume').oninput=()=> audio.volume=+$('volume').value; audio.volume=+$('volume').value;
+function restoreLast(){ const id=localStorage.getItem('lastTrack'); const i=state.tracks.findIndex(t=>t.id===id); if(i>=0){ state.index=i; audio.src=state.tracks[i].path; audio.currentTime=+(localStorage.getItem('lastTime')||0); updateNow(); render(); } }
+function setupViz(){
+  const canvas=$('viz'), ctx=canvas.getContext('2d'); let ac, src, analyser, data;
+  function connect(){ if(ac) return; try{ ac=new AudioContext(); src=ac.createMediaElementSource(audio); analyser=ac.createAnalyser(); src.connect(analyser); analyser.connect(ac.destination); data=new Uint8Array(analyser.frequencyBinCount); draw(); }catch(e){} }
+  audio.addEventListener('play',()=>{ connect(); if(ac&&ac.state==='suspended') ac.resume(); });
+  function draw(){ requestAnimationFrame(draw); if(!analyser) return; analyser.getByteFrequencyData(data); ctx.clearRect(0,0,canvas.width,canvas.height); const bars=24,w=canvas.width/bars; for(let i=0;i<bars;i++){ const v=data[i*4]/255; const h=v*canvas.height; ctx.fillStyle='rgba(34,197,94,.85)'; ctx.fillRect(i*w,canvas.height-h,w-2,h); } }
+}
