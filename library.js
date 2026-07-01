@@ -8,6 +8,38 @@ window.MUSIC_LIBRARY = [
     "cover": ""
   },
   {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 126 - 390b5bc7 - MP3.mp3",
+    "title": "Fantasy Waltz 126   390b5bc7   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 126 - 390b5bc7 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 126 - 68e01201 - MP3.mp3",
+    "title": "Fantasy Waltz 126   68e01201   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 126 - 68e01201 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 127 - 71b6fe8c - MP3.mp3",
+    "title": "Fantasy Waltz 127   71b6fe8c   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 127 - 71b6fe8c - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 127 - 7fe5b379 - MP3.mp3",
+    "title": "Fantasy Waltz 127   7fe5b379   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 127 - 7fe5b379 - MP3.mp3",
+    "cover": ""
+  },
+  {
     "id": "music/Nhạc Không Lời/Fantasy Waltz 128 - 587b1abe - MP3.mp3",
     "title": "Fantasy Waltz 128   587b1abe   MP3",
     "artist": "Suno",
