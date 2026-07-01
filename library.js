@@ -72,6 +72,54 @@ window.MUSIC_LIBRARY = [
     "cover": ""
   },
   {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 148 - a2645a08 - MP3.mp3",
+    "title": "Fantasy Waltz 148   a2645a08   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 148 - a2645a08 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 148 - ac46b62e - MP3.mp3",
+    "title": "Fantasy Waltz 148   ac46b62e   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 148 - ac46b62e - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 149 - a456cef4 - MP3.mp3",
+    "title": "Fantasy Waltz 149   a456cef4   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 149 - a456cef4 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 149 - edfc295e - MP3.mp3",
+    "title": "Fantasy Waltz 149   edfc295e   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 149 - edfc295e - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 150 - 675e1b73 - MP3.mp3",
+    "title": "Fantasy Waltz 150   675e1b73   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 150 - 675e1b73 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 150 - 98d2981e - MP3.mp3",
+    "title": "Fantasy Waltz 150   98d2981e   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 150 - 98d2981e - MP3.mp3",
+    "cover": ""
+  },
+  {
     "id": "music/Nhạc Không Lời/Fantasy Waltz 157 - 6153a00d - MP3.mp3",
     "title": "Fantasy Waltz 157   6153a00d   MP3",
     "artist": "Suno",
