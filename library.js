@@ -8,6 +8,230 @@ window.MUSIC_LIBRARY = [
     "cover": ""
   },
   {
+    "id": "music/Fantasy Waltz 90 - 8c32d052 - MP3.mp3",
+    "title": "Fantasy Waltz 90   8c32d052   MP3",
+    "artist": "Suno",
+    "album": "Music",
+    "path": "music/Fantasy Waltz 90 - 8c32d052 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Fantasy Waltz 90 - 98b95296 - MP3.mp3",
+    "title": "Fantasy Waltz 90   98b95296   MP3",
+    "artist": "Suno",
+    "album": "Music",
+    "path": "music/Fantasy Waltz 90 - 98b95296 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Fantasy Waltz 91 - ad8b9815 - MP3.mp3",
+    "title": "Fantasy Waltz 91   ad8b9815   MP3",
+    "artist": "Suno",
+    "album": "Music",
+    "path": "music/Fantasy Waltz 91 - ad8b9815 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Fantasy Waltz 91 - b66e1016 - MP3.mp3",
+    "title": "Fantasy Waltz 91   b66e1016   MP3",
+    "artist": "Suno",
+    "album": "Music",
+    "path": "music/Fantasy Waltz 91 - b66e1016 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Fantasy Waltz 92 - 628a1dc0 - MP3.mp3",
+    "title": "Fantasy Waltz 92   628a1dc0   MP3",
+    "artist": "Suno",
+    "album": "Music",
+    "path": "music/Fantasy Waltz 92 - 628a1dc0 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Fantasy Waltz 92 - f323b9f6 - MP3.mp3",
+    "title": "Fantasy Waltz 92   f323b9f6   MP3",
+    "artist": "Suno",
+    "album": "Music",
+    "path": "music/Fantasy Waltz 92 - f323b9f6 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Fantasy Waltz 93 - 9bc88d1e - MP3.mp3",
+    "title": "Fantasy Waltz 93   9bc88d1e   MP3",
+    "artist": "Suno",
+    "album": "Music",
+    "path": "music/Fantasy Waltz 93 - 9bc88d1e - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Fantasy Waltz 93 - a67acf1b - MP3.mp3",
+    "title": "Fantasy Waltz 93   a67acf1b   MP3",
+    "artist": "Suno",
+    "album": "Music",
+    "path": "music/Fantasy Waltz 93 - a67acf1b - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 100 - 384c4dfb - MP3.mp3",
+    "title": "Fantasy Waltz 100   384c4dfb   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 100 - 384c4dfb - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 100 - 9ef982e5 - MP3.mp3",
+    "title": "Fantasy Waltz 100   9ef982e5   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 100 - 9ef982e5 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 101 - f96b4d3b - MP3.mp3",
+    "title": "Fantasy Waltz 101   f96b4d3b   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 101 - f96b4d3b - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 101 - f9aeff47 - MP3.mp3",
+    "title": "Fantasy Waltz 101   f9aeff47   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 101 - f9aeff47 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 102 - 0ad89b57 - MP3.mp3",
+    "title": "Fantasy Waltz 102   0ad89b57   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 102 - 0ad89b57 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 102 - eadcebef - MP3.mp3",
+    "title": "Fantasy Waltz 102   eadcebef   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 102 - eadcebef - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 103 - 6a809d30 - MP3.mp3",
+    "title": "Fantasy Waltz 103   6a809d30   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 103 - 6a809d30 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 103 - 795dc0de - MP3.mp3",
+    "title": "Fantasy Waltz 103   795dc0de   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 103 - 795dc0de - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 104 - d3cf8c15 - MP3.mp3",
+    "title": "Fantasy Waltz 104   d3cf8c15   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 104 - d3cf8c15 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 104 - f151e821 - MP3.mp3",
+    "title": "Fantasy Waltz 104   f151e821   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 104 - f151e821 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 105 - 94880841 - MP3.mp3",
+    "title": "Fantasy Waltz 105   94880841   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 105 - 94880841 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 105 - 9e3fff6e - MP3.mp3",
+    "title": "Fantasy Waltz 105   9e3fff6e   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 105 - 9e3fff6e - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 106 - 361f9fac - MP3.mp3",
+    "title": "Fantasy Waltz 106   361f9fac   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 106 - 361f9fac - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 106 - c874aaf1 - MP3.mp3",
+    "title": "Fantasy Waltz 106   c874aaf1   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 106 - c874aaf1 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 107 - 8e606613 - MP3.mp3",
+    "title": "Fantasy Waltz 107   8e606613   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 107 - 8e606613 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 107 - cfae7f17 - MP3.mp3",
+    "title": "Fantasy Waltz 107   cfae7f17   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 107 - cfae7f17 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 108 - 89818dcc - MP3.mp3",
+    "title": "Fantasy Waltz 108   89818dcc   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 108 - 89818dcc - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 108 - f7613ab2 - MP3.mp3",
+    "title": "Fantasy Waltz 108   f7613ab2   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 108 - f7613ab2 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 109 - 32a4c3b2 - MP3.mp3",
+    "title": "Fantasy Waltz 109   32a4c3b2   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 109 - 32a4c3b2 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 109 - c5a9efcc - MP3.mp3",
+    "title": "Fantasy Waltz 109   c5a9efcc   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 109 - c5a9efcc - MP3.mp3",
+    "cover": ""
+  },
+  {
     "id": "music/Nhạc Không Lời/Fantasy Waltz 110 - 2d25f7ef - MP3.mp3",
     "title": "Fantasy Waltz 110   2d25f7ef   MP3",
     "artist": "Suno",
@@ -837,6 +1061,102 @@ window.MUSIC_LIBRARY = [
     "artist": "Suno",
     "album": "Nhạc Không Lời",
     "path": "music/Nhạc Không Lời/Fantasy Waltz 161 - 47cfffbe - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 94 - bcc18caf - MP3.mp3",
+    "title": "Fantasy Waltz 94   bcc18caf   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 94 - bcc18caf - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 94 - fc2c90f4 - MP3.mp3",
+    "title": "Fantasy Waltz 94   fc2c90f4   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 94 - fc2c90f4 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 95 - 3f480574 - MP3.mp3",
+    "title": "Fantasy Waltz 95   3f480574   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 95 - 3f480574 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 95 - 9372e4f1 - MP3.mp3",
+    "title": "Fantasy Waltz 95   9372e4f1   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 95 - 9372e4f1 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 96 - 7a9f3c78 - MP3.mp3",
+    "title": "Fantasy Waltz 96   7a9f3c78   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 96 - 7a9f3c78 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 96 - bb4ddcca - MP3.mp3",
+    "title": "Fantasy Waltz 96   bb4ddcca   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 96 - bb4ddcca - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 97 - f3b9d83c - MP3.mp3",
+    "title": "Fantasy Waltz 97   f3b9d83c   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 97 - f3b9d83c - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 97 - fd7ab3bd - MP3.mp3",
+    "title": "Fantasy Waltz 97   fd7ab3bd   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 97 - fd7ab3bd - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 98 - bd0a434d - MP3.mp3",
+    "title": "Fantasy Waltz 98   bd0a434d   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 98 - bd0a434d - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 98 - ef82dc59 - MP3.mp3",
+    "title": "Fantasy Waltz 98   ef82dc59   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 98 - ef82dc59 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 99 - abec86d5 - MP3.mp3",
+    "title": "Fantasy Waltz 99   abec86d5   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 99 - abec86d5 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 99 - f4d301be - MP3.mp3",
+    "title": "Fantasy Waltz 99   f4d301be   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 99 - f4d301be - MP3.mp3",
     "cover": ""
   }
 ];
