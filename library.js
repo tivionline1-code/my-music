@@ -8,6 +8,70 @@ window.MUSIC_LIBRARY = [
     "cover": ""
   },
   {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 118 - 85341af7 - MP3.mp3",
+    "title": "Fantasy Waltz 118   85341af7   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 118 - 85341af7 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 118 - ea83d2db - MP3.mp3",
+    "title": "Fantasy Waltz 118   ea83d2db   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 118 - ea83d2db - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 119 - 19b35132 - MP3.mp3",
+    "title": "Fantasy Waltz 119   19b35132   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 119 - 19b35132 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 119 - 655be36d - MP3.mp3",
+    "title": "Fantasy Waltz 119   655be36d   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 119 - 655be36d - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 120 - 7acd6881 - MP3.mp3",
+    "title": "Fantasy Waltz 120   7acd6881   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 120 - 7acd6881 - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 120 - bdb3610f - MP3.mp3",
+    "title": "Fantasy Waltz 120   bdb3610f   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 120 - bdb3610f - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 121 - 3f824ffa - MP3.mp3",
+    "title": "Fantasy Waltz 121   3f824ffa   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 121 - 3f824ffa - MP3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Không Lời/Fantasy Waltz 121 - 89c216ec - MP3.mp3",
+    "title": "Fantasy Waltz 121   89c216ec   MP3",
+    "artist": "Suno",
+    "album": "Nhạc Không Lời",
+    "path": "music/Nhạc Không Lời/Fantasy Waltz 121 - 89c216ec - MP3.mp3",
+    "cover": ""
+  },
+  {
     "id": "music/Nhạc Không Lời/Fantasy Waltz 122 - 3c8a1724 - MP3.mp3",
     "title": "Fantasy Waltz 122   3c8a1724   MP3",
     "artist": "Suno",
