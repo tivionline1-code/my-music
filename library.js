@@ -2022,5 +2022,189 @@ window.MUSIC_LIBRARY = [
     "album": "Nhạc Không Lời",
     "path": "music/Nhạc Không Lời/Fantasy Waltz 99 - f4d301be - MP3.mp3",
     "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Anh Đợi Tin Em.mp3",
+    "title": "Anh Đợi Tin Em",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Anh Đợi Tin Em.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Chắc Là Anh Thương.mp3",
+    "title": "Chắc Là Anh Thương",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Chắc Là Anh Thương.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Chỉ Là Một Cơn Mưa.mp3",
+    "title": "Chỉ Là Một Cơn Mưa",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Chỉ Là Một Cơn Mưa.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Có Lẽ Là Anh.mp3",
+    "title": "Có Lẽ Là Anh",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Có Lẽ Là Anh.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Có Lẽ Là Em.mp3",
+    "title": "Có Lẽ Là Em",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Có Lẽ Là Em.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Đi Chậm Bên Em.mp3",
+    "title": "Đi Chậm Bên Em",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Đi Chậm Bên Em.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Gần Như Là Thương.mp3",
+    "title": "Gần Như Là Thương",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Gần Như Là Thương.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Giá Như Em Biết.mp3",
+    "title": "Giá Như Em Biết",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Giá Như Em Biết.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Hay Là Thôi.mp3",
+    "title": "Hay Là Thôi",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Hay Là Thôi.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Hình Như Là Em 1.mp3",
+    "title": "Hình Như Là Em 1",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Hình Như Là Em 1.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Hình Như Là Em 2.mp3",
+    "title": "Hình Như Là Em 2",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Hình Như Là Em 2.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Hình Như Là Em 3.mp3",
+    "title": "Hình Như Là Em 3",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Hình Như Là Em 3.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Hình Như Là Em 4.mp3",
+    "title": "Hình Như Là Em 4",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Hình Như Là Em 4.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Hình Như Là Em.mp3",
+    "title": "Hình Như Là Em",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Hình Như Là Em.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Lạc Giữa Cuối Tuần 1.mp3",
+    "title": "Lạc Giữa Cuối Tuần 1",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Lạc Giữa Cuối Tuần 1.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Lạc Giữa Cuối Tuần.mp3",
+    "title": "Lạc Giữa Cuối Tuần",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Lạc Giữa Cuối Tuần.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Mình Đi Chậm Một Chút.mp3",
+    "title": "Mình Đi Chậm Một Chút",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Mình Đi Chậm Một Chút.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Ngồi Gần Em Thôi.mp3",
+    "title": "Ngồi Gần Em Thôi",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Ngồi Gần Em Thôi.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Qua Bến Xưa.mp3",
+    "title": "Qua Bến Xưa",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Qua Bến Xưa.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Qua Đây Nghe Chiều 1.mp3",
+    "title": "Qua Đây Nghe Chiều 1",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Qua Đây Nghe Chiều 1.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Qua Đây Nghe Chiều.mp3",
+    "title": "Qua Đây Nghe Chiều",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Qua Đây Nghe Chiều.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Theo Em 1.mp3",
+    "title": "Theo Em 1",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Theo Em 1.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Nhạc Trẻ/Theo Em.mp3",
+    "title": "Theo Em",
+    "artist": "Suno",
+    "album": "Nhạc Trẻ",
+    "path": "music/Nhạc Trẻ/Theo Em.mp3",
+    "cover": ""
   }
 ];
