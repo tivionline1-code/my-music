@@ -8,6 +8,46 @@ window.MUSIC_LIBRARY = [
     "cover": ""
   },
   {
+    "id": "music/Fantasy orchestral/Lối Về Dưới Trăng.mp3",
+    "title": "Lối Về Dưới Trăng",
+    "artist": "Suno",
+    "album": "Fantasy orchestral",
+    "path": "music/Fantasy orchestral/Lối Về Dưới Trăng.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Fantasy orchestral/Người Gác Đèn.mp3",
+    "title": "Người Gác Đèn",
+    "artist": "Suno",
+    "album": "Fantasy orchestral",
+    "path": "music/Fantasy orchestral/Người Gác Đèn.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Fantasy orchestral/Nơi Ánh Sáng Dừng Lại.mp3",
+    "title": "Nơi Ánh Sáng Dừng Lại",
+    "artist": "Suno",
+    "album": "Fantasy orchestral",
+    "path": "music/Fantasy orchestral/Nơi Ánh Sáng Dừng Lại.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Fantasy orchestral/Rừng Gió Thì Thầm.mp3",
+    "title": "Rừng Gió Thì Thầm",
+    "artist": "Suno",
+    "album": "Fantasy orchestral",
+    "path": "music/Fantasy orchestral/Rừng Gió Thì Thầm.mp3",
+    "cover": ""
+  },
+  {
+    "id": "music/Fantasy orchestral/Vườn Trăng Ngủ Quên (Remastered).mp3",
+    "title": "Vườn Trăng Ngủ Quên (Remastered)",
+    "artist": "Suno",
+    "album": "Fantasy orchestral",
+    "path": "music/Fantasy orchestral/Vườn Trăng Ngủ Quên (Remastered).mp3",
+    "cover": ""
+  },
+  {
     "id": "music/Fantasy Waltz 90 - 8c32d052 - MP3.mp3",
     "title": "Fantasy Waltz 90   8c32d052   MP3",
     "artist": "Suno",
